@@ -39,14 +39,18 @@ class Chronometer {
   }
 
   reset() {
-    // ... your code goes here
     this.currentTime = 0;
     // reset HTML
 
-    const minutesEl = document.getElementById('minutes');
-    const secondsEl = document.getElementById('seconds');
-    minutesEl.innerHTML = '00';
-    secondsEl.innerHTML = '00';
+    const minDecElement = document.getElementById('minDec');
+    const minUniElement = document.getElementById('minUni');
+    const secDecElement = document.getElementById('secDec');
+    const secUniElement = document.getElementById('secUni');
+
+    minDecElement.innerText = '0';
+    minUniElement.innerText = '0';
+    secDecElement.innerText = '0';
+    secUniElement.innerText = '0';
   }
 
   split() {
